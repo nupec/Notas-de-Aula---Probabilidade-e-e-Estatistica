@@ -1,0 +1,210 @@
+---
+title: "Probabilidade e Estatística"
+subtitle: "Aula 01 - Tomada de DECISÃO baseada em EVIDÊNCIAS, é disso que se trata"
+author: "Prof. Dr. Hidelbrando F. Rodrigues"
+institute: "ICET/UFAM"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: [default, "fc", "hygge"]
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+      output: 
+      rticles::arxiv_article:
+      keep_tex: true
+bibliography: bibliografia.bib
+biblio-style: unsrtrobot
+
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#1381B0",
+  secondary_color = "#FF961C",
+  inverse_header_color = "#FFFFFF"
+)
+
+```
+```{r echo=FALSE, include=FALSE}
+names(xaringan:::list_css())
+```
+
+## Dados, Estatística e Decisões
+
+> 
+### Por que estudar Estatística?
+
+--
+
+> 
+### Por que quase todas as profissões estudam Estatística?
+
+--
+
+> 
+### Afinal de contas, do que se trata?
+
+# Definição
+--
+
+> Estatística é a ciência que nos ajuda a **tomar decisões** e **tirar conclusões** na **presença de incertezas**
+
+
+---
+class: inverse center middle
+
+# A Estatística pode ser divida em duas grandes áreas interdependentes
+
+--
+ 
+##  - Estatística Descritiva
+
+--
+ 
+## - Inferêcia Estatística
+
+--
+
+> ## A **Estatística Descritiva** analisa a AMOSTRA, enquanto a **Inferência Estatística** tira conclusões para toda a POPULAÇÃO a partir da AMOSTRA [Wickham, 2019]
+
+--
+
+---
+## A Ciência de Dados
+
+.left-column[
+
+```{r echo=FALSE, fig.width=1, out.width = "300%"}
+
+knitr::include_graphics("Imagens/diagrama-data-science.png")
+
+```
+]
+
+--
+
+.right-column[
+
+- Segundo a site da Oracle, a ciência de dados combina vários campos, incluindo estatísticas, métodos científicos, inteligência artificial (IA) e análise de dados para extrair valor dos dados. 
+
+- Aqueles que praticam a ciência de dados são chamados de cientistas de dados e combinam uma variedade de habilidades para analisar dados coletados da web, smartphones, clientes, sensores e outras fontes para obter insights acionáveis.
+
+]
+---
+
+## Ciclo da Ciência de Dados
+
+Whikhan e Grolemund (2019), afirmam que *Data Science* é um campo enorme e propõem o seguinte modelo das ferramentas necessárias em um projeto típico de data science:
+
+
+```{r echo=FALSE, fig.width=1, out.width = "45%"}
+
+knitr::include_graphics("Imagens/ciclo-ciencia-de-dados.png")
+
+```
+> A ciência de dados abrange a preparação de dados para análise, incluindo limpeza, agregação e manipulação de dados para realizar análises de dados avançadas. 
+
+--
+
+> 
+Os aplicativos analíticos e os cientistas de dados podem então revisar os resultados para descobrir padrões e permitir que os líderes de negócios obtenham insights informados.
+
+---
+
+## Ciência de dados: Um recurso inexplorado para machine learning
+
+- Ciência de dados é um dos campos mais interessantes que existem hoje. Por que é tão importante?
+
+--
+
+- Porque as empresas estão sentadas em um tesouro de dados. Como a tecnologia moderna permitiu a criação e armazenamento de quantidades crescentes de informações, os volumes de dados explodiram. Estima-se que 90% dos dados do mundo tenham sido criados nos últimos dois anos. Por exemplo, os usuários do Facebook carregam 10 milhões de fotos a cada hora.
+
+--
+
+- Mas esses dados muitas vezes ainda estão apenas em bancos de dados e data lakes, em sua maioria intocados.
+
+--
+
+- A riqueza de dados coletados e armazenados por essas tecnologias pode trazer benefícios transformadores para organizações e sociedades em todo o mundo, mas somente se pudermos interpretá-los. É aí que entra a ciência de dados.
+
+--
+
+- A ciência de dados revela tendências e produz as informações que as empresas podem usar para tomar melhores decisões e criar produtos e serviços mais inovadores. Talvez o mais importante seja que ele permite que os modelos de machine learning (ML) aprendam com as grandes quantidades de dados que estão sendo fornecidos a eles, em vez de depender principalmente de analistas de negócios para ver o que podem descobrir a partir dos dados.
+
+--
+
+- Os dados são a base da inovação, mas seu valor vem dos dados de informações que os cientistas podem extrair e depois usar.
+
+---
+
+## Qual é a diferença entre ciência de dados, inteligência artificial e machine learning?
+
+Para entender melhor a ciência de dados - e como você pode aproveitá-la - é igualmente importante conhecer outros termos relacionados à área, como inteligência artificial (IA) e machine learning. Frequentemente, você descobrirá que esses termos são usados de forma intercambiável, mas existem nuances.
+
+Aqui está uma análise simples:
+
+- **IA** significa fazer com que um computador imite o comportamento humano de alguma forma.
+
+--
+
+- *Ciência de dados** é um subconjunto da inteligência artificial (IA) e se refere mais às áreas sobrepostas de estatísticas, métodos científicos e análise de dados - todas as qua
+
+--
+
+ - **Machine learning** é outro subconjunto da inteligência artificial (IA) e consiste nas técnicas que permitem aos computadores descobrir coisas a partir dos dados e fornecer aplicativos de inteligência artificial (IA). E para garantir, vamos adicionar outra definição.
+
+--
+
+- **Aprendizagem profunda (deep learning)**, que é um subconjunto de machine learning que permite aos computadores resolver problemas mais complexos.
+
+--
+
+Muitas empresas priorizaram a ciência de dados e estão investindo fortemente nela. Na pesquisa recente do Gartner com mais de 3.000 Diretores de Informações (CIOs), os entrevistados classificaram o business intelligence e a análise avançada como o principal diferencial de tecnologia para as suas empresas. Os Diretores de Informações (CIOs) entrevistados consideram essas tecnologias as mais estratégicas para suas empresas e estão investindo de acordo.
+
+---
+
+### Como a ciência de dados é conduzida
+
+O processo de análise e ação sobre os dados é iterativo em vez de linear, mas é assim que o ciclo de vida da ciência de dados normalmente flui para um projeto de modelagem de dados:
+
+- **Planejamento**:  Definir um projeto e seus possíveis resultados.
+
+--
+
+- **Construção de um modelo de dados**:  Os cientistas de dados costumam usar uma variedade de bibliotecas de código aberto ou ferramentas no banco de dados para construir modelos de machine learning. Frequentemente, os usuários desejam APIs para ajudar na ingestão de dados, criação de perfil de dados e visualização ou engenharia de recursos. Eles precisarão das ferramentas certas, assim como de acesso aos dados certos e a outros recursos, como poder de computação.
+
+--
+
+- **Avaliação de um modelo**:  Os cientistas de dados devem atingir um alto percentual de precisão para seus modelos antes de se sentirem confiantes em implementá-los. A avaliação do modelo normalmente irá gerar um conjunto abrangente de métricas de avaliação e visualizações para medir o desempenho do modelo em relação aos novos dados e também classificá-los ao longo do tempo para permitir o comportamento ideal na produção. A avaliação do modelo vai além do desempenho bruto para levar em consideração o comportamento esperado da linha de base.
+
+--
+
+- **Explicação de modelos**:  Ser capaz de explicar a mecânica interna dos resultados dos modelos de machine learning em termos humanos nem sempre foi possível - mas está se tornando cada vez mais importante. Os cientistas de dados desejam explicações automatizadas do peso relativo e da importância dos fatores que geram uma previsão e detalhes explicativos específicos do modelo nas previsões do modelo.
+
+--
+
+- **Implementação de um modelo**:  Usar um modelo de machine learning treinado e colocá-lo nos sistemas certos costuma ser um processo difícil e trabalhoso. Isso pode ser facilitado operacionalizando modelos como APIs escaláveis e seguras ou usando modelos de machine learning no banco de dados.
+
+--
+
+- **Monitoramento de modelos**:  Infelizmente, implementar um modelo não é o fim disso. Os modelos devem sempre ser monitorados após a implementação para garantir que estejam funcionando corretamente. Os dados em que o modelo foi treinado podem não ser mais relevantes para previsões futuras após um período de tempo. Por exemplo, na detecção de fraudes, os criminosos estão sempre inventando novas maneiras de hackear contas.
+
+
