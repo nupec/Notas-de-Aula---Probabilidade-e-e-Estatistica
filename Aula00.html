@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Universidade Federal do Amazonas</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Dr. Hidelbrando Ferreira Rodrigues" />
+    <meta name="author" content="Probabilidade e Estatística - Aula 0" />
+    <meta name="author" content="Turma: Sistemas de Informação" />
+    <meta name="author" content="Ano civil: 2021 - Semestre letivo 2020/2" />
+    <meta name="date" content="2021-08-12" />
+    <script src="Aula00_files/header-attrs/header-attrs.js"></script>
+    <link href="Aula00_files/remark-css/default.css" rel="stylesheet" />
+    <link href="Aula00_files/remark-css/fc.css" rel="stylesheet" />
+    <link href="Aula00_files/remark-css/hygge.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Universidade Federal do Amazonas
+## Instituto de Ciência Exatas e Tecnologia
+### Prof. Dr. Hidelbrando Ferreira Rodrigues
+### Probabilidade e Estatística - Aula 0
+### Turma: Sistemas de Informação
+### Ano civil: 2021 - Semestre letivo 2020/2
+### 2021-08-12
+
+---
+
+
+
+
+
+
+## Ementa
+
+Conceitos estatísticos. Organização de dados. Tabelas e gráficos. Distribuição de frequência. Medidas de tendência central (posição), dispersão de posição e separatrizes. Medidas de assimetria e curtose. Diagrama de dispersão e correlação. Regressão linear simples. Coeficiente de correlação. Probabilidade. Distribuições de probabilidade: variável aleatória discreta e contínua. Modelos de distribuição discreta. Modelos de distribuição contínua. Intervalos de confiança. Teste de hipóteses
+
+--
+
+## Objetivo Geral
+Apresentar a Probabilidade e Estatística e como utilizá-la para modelar e analisar problemas
+---
+## Referências
+ 
+### Básicas
+
+- LEVINE, D M et al. Estatística - Teoria e Aplicações usando MS Excel. Rio de Janeiro: LTC, 2012
+- [MORETTIN, Pedro Alberto; BUSSAB, Wilton de Oliveira. Estatística Básica. 7. ed. São Paulo: Saraiva, 2011 - (pdf do livro disponível)](#3)
+- SPIEGEL, M. R e STEPHENS, L. J. Estatística. Porto Alegre: Bookman, 2009
+
+--
+
+### Complementares
+- BORNIA, A. C., BARBETTA, P. A. e REIS, M. M. Estatística para Cursos de Engenharia e Informática. São Paulo: Atlas, 2008
+- BRUNI, A. L. Estatística Aplicada à Gestão Empresarial. São Paulo: Atlas, 2008
+- GRIFFITHS, D. Use a Cabeça! Estatística. Rio de Janeiro: São Paulo: Alta Books, 2009
+- MARTINS, G. A. Estatística Geral e Aplicada. São Paulo: Atlas, 2010
+- RONALD, E. W. Probabilidade e Estatística para Engenharia e Ciências. São Paulo: Prentice Hall, 2009
+
+---
+## Informações complementares
+
+### Dias e horários de atendimento
+
+&gt; Quarta-feira / Sexta-feira - 16:30 às 17:30
+
+--
+
+### Código da turma no Google Salas de Aula: 
+
+&gt; # gn34krn 
+
+
+
+
+---
+## Avaliação - Estão planejadas 6 notas:
+Nota 1: Estatística Descritiva
+&gt; 
+- Análise Exploratória de Dados (EAD)
+- Medidadas de Tendência Central
+- Medidas de Variabilidade
+- Separatrizes
+- Boxplot
+
+
+--
+Nota 2: Introdução à Probabilidade
+&gt; 
+- Principais definições, teoremas e corolários
+- Probabilidade Condicional
+- Teorema de Bayes
+
+
+--
+Nota 3: Distribuição Discretas de Probabilidades 
+
+&gt; - Principais Distribuições Discretas
+- Distribuição Binomial
+- Distribuição Poisson
+- Exponencial Negativa
+
+
+---
+## Avaliação
+
+Nota 4: Distribuição Contínuas de Probabilidades 
+&gt; 
+- Principais Distribuições Contínuas 
+- Distribuição Contínua
+- Distribuição Normal
+
+--
+
+Nota 5: Intervalo de Confiança
+&gt; 
+- Intervalo de Confiança para a média (amostral e populacional)
+- Intervalo de Confiança para a variância (amostral e populacional)
+- Intervalo de Confiança para o desvio padrão (amostral e populacional)
+
+--
+
+Nota 6: Teste de Hipóteses
+&gt; 
+- Teste de Hipótese para a média 
+- Teste de Hipótese para a variância 
+- Teste de Hipótese para o desvio padrão
+
+---
+## Critérios de Avaliação
+
+&gt; 
+- Avaliação Qualitativa (AQ) - (30% da nota)
+- Avaliação em Grupo(AG) - (40% da nota)
+- Avalaliação Individual (AI)- (30% da nota)
+
+
+--
+### Médias Parciais
+&gt; Média Parcial(1) = `\((Nota 1 + Nota 2)/2\)`
+
+&gt; Média Parcial(2) = `\((Nota 3 + Nota 4)/2\)`
+
+&gt; Média Parcial(3) = `\((Nota 4 + Nota 5)/2\)`
+
+### Média Parcial
+
+&gt; MP = (MP1 + MP2 + MP3)/3
+
+---
+### Condições de aprovação
+
+&gt; Se a MP &gt;= 8, então APROVADO;
+
+Caso contrário:
+
+&gt; MF = (2*MP + PF)/3.  Se a MF &gt;= 5,0 (APROVADO)
+
+---
+class: inverse center middle
+
+### Detalhes do Processo de Avaliação
+
+---
+## Avaliação Qualitativa (AQ)
+
+### São atividades desenvolvidas pelos alunos (individualmente), às quais serão atribuídas nota 1 (para as atividades realizadas) e 0 (caso a atividade não seja realizada)
+--
+
+&gt; Exemplos de Atividades Qualitativas (AQ): 
+- Leitura de material pedagógico
+- Assistir a um vídeo disponível na internet que verse sobre o tema estudado
+- Participar de eventos online (seminário, palestras, etc)
+- Outras atividades podem ser sugeridas
+
+--
+
+&gt; A realização de todas as AQ correponderá a 30% da notas parcial.
+
+---
+## Avaliação em Grupo (AG)
+
+### São atividades desenvolvidas por pelos menos 02 (dois) alunos, às quais serão atribuídas nota 1 (um) a 5 (cinco). 
+--
+
+&gt; Exemplos de Atividades Qualitativas (AG): 
+- Lista de exercíos
+- Seminários
+- Estudos de caso
+- Avaliação quantitativa, dentre outras
+
+--
+
+&gt; A realização de todas as AG correponderá a 40% da notas parcial.
+
+---
+## Avaliação Individual (AI)
+
+### São atividades desenvolvidas pelos alunos (individualmente), às quais serão atribuídas nota 1 (um) a 5 (cinco). 
+--
+
+&gt; Exemplos de Atividades Qualitativas (AI): 
+- Lista de exercíos
+- Seminários
+- Estudos de caso
+- Avaliação quantitativa, dentre outras
+
+--
+
+&gt; A realização de todas as AI correponderá a 30% da notas parcial.
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Probabilidade e Estatística</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Prof. Dr. Hidelbrando F. Rodrigues" />
+    <meta name="date" content="2021-08-12" />
+    <script src="Aula01_files/header-attrs/header-attrs.js"></script>
+    <link href="Aula01_files/remark-css/default.css" rel="stylesheet" />
+    <link href="Aula01_files/remark-css/fc.css" rel="stylesheet" />
+    <link href="Aula01_files/remark-css/hygge.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Probabilidade e Estatística
+## Aula 01 - Tomada de DECISÃO baseada em EVIDÊNCIAS, é disso que se trata
+### Prof. Dr. Hidelbrando F. Rodrigues
+### ICET/UFAM
+### 2021-08-12
+
+---
+
+
+
+
+
+
+
+## Dados, Estatística e Decisões
+
+&gt; 
+### Por que estudar Estatística?
+
+--
+
+&gt; 
+### Por que quase todas as profissões estudam Estatística?
+
+--
+
+&gt; 
+### Afinal de contas, do que se trata?
+
+# Definição
+--
+
+&gt; Estatística é a ciência que nos ajuda a **tomar decisões** e **tirar conclusões** na **presença de incertezas**
+
+
+---
+class: inverse center middle
+
+# A Estatística pode ser divida em duas grandes áreas interdependentes
+
+--
+ 
+##  - Estatística Descritiva
+
+--
+ 
+## - Inferêcia Estatística
+
+--
+
+&gt; ## A **Estatística Descritiva** analisa a AMOSTRA, enquanto a **Inferência Estatística** tira conclusões para toda a POPULAÇÃO a partir da AMOSTRA [Wickham, 2019]
+
+--
+
+---
+## A Ciência de Dados
+
+.left-column[
+
+&lt;img src="Imagens/diagrama-data-science.png" width="300%" /&gt;
+]
+
+--
+
+.right-column[
+
+- Segundo a site da Oracle, a ciência de dados combina vários campos, incluindo estatísticas, métodos científicos, inteligência artificial (IA) e análise de dados para extrair valor dos dados. 
+
+- Aqueles que praticam a ciência de dados são chamados de cientistas de dados e combinam uma variedade de habilidades para analisar dados coletados da web, smartphones, clientes, sensores e outras fontes para obter insights acionáveis.
+
+]
+---
+
+## Ciclo da Ciência de Dados
+
+Whikhan e Grolemund (2019), afirmam que *Data Science* é um campo enorme e propõem o seguinte modelo das ferramentas necessárias em um projeto típico de data science:
+
+
+&lt;img src="Imagens/ciclo-ciencia-de-dados.png" width="45%" /&gt;
+&gt; A ciência de dados abrange a preparação de dados para análise, incluindo limpeza, agregação e manipulação de dados para realizar análises de dados avançadas. 
+
+--
+
+&gt; 
+Os aplicativos analíticos e os cientistas de dados podem então revisar os resultados para descobrir padrões e permitir que os líderes de negócios obtenham insights informados.
+
+---
+
+## Ciência de dados: Um recurso inexplorado para machine learning
+
+- Ciência de dados é um dos campos mais interessantes que existem hoje. Por que é tão importante?
+
+--
+
+- Porque as empresas estão sentadas em um tesouro de dados. Como a tecnologia moderna permitiu a criação e armazenamento de quantidades crescentes de informações, os volumes de dados explodiram. Estima-se que 90% dos dados do mundo tenham sido criados nos últimos dois anos. Por exemplo, os usuários do Facebook carregam 10 milhões de fotos a cada hora.
+
+--
+
+- Mas esses dados muitas vezes ainda estão apenas em bancos de dados e data lakes, em sua maioria intocados.
+
+--
+
+- A riqueza de dados coletados e armazenados por essas tecnologias pode trazer benefícios transformadores para organizações e sociedades em todo o mundo, mas somente se pudermos interpretá-los. É aí que entra a ciência de dados.
+
+--
+
+- A ciência de dados revela tendências e produz as informações que as empresas podem usar para tomar melhores decisões e criar produtos e serviços mais inovadores. Talvez o mais importante seja que ele permite que os modelos de machine learning (ML) aprendam com as grandes quantidades de dados que estão sendo fornecidos a eles, em vez de depender principalmente de analistas de negócios para ver o que podem descobrir a partir dos dados.
+
+--
+
+- Os dados são a base da inovação, mas seu valor vem dos dados de informações que os cientistas podem extrair e depois usar.
+
+---
+
+## Qual é a diferença entre ciência de dados, inteligência artificial e machine learning?
+
+Para entender melhor a ciência de dados - e como você pode aproveitá-la - é igualmente importante conhecer outros termos relacionados à área, como inteligência artificial (IA) e machine learning. Frequentemente, você descobrirá que esses termos são usados de forma intercambiável, mas existem nuances.
+
+Aqui está uma análise simples:
+
+- **IA** significa fazer com que um computador imite o comportamento humano de alguma forma.
+
+--
+
+- *Ciência de dados** é um subconjunto da inteligência artificial (IA) e se refere mais às áreas sobrepostas de estatísticas, métodos científicos e análise de dados - todas as qua
+
+--
+
+ - **Machine learning** é outro subconjunto da inteligência artificial (IA) e consiste nas técnicas que permitem aos computadores descobrir coisas a partir dos dados e fornecer aplicativos de inteligência artificial (IA). E para garantir, vamos adicionar outra definição.
+
+--
+
+- **Aprendizagem profunda (deep learning)**, que é um subconjunto de machine learning que permite aos computadores resolver problemas mais complexos.
+
+--
+
+Muitas empresas priorizaram a ciência de dados e estão investindo fortemente nela. Na pesquisa recente do Gartner com mais de 3.000 Diretores de Informações (CIOs), os entrevistados classificaram o business intelligence e a análise avançada como o principal diferencial de tecnologia para as suas empresas. Os Diretores de Informações (CIOs) entrevistados consideram essas tecnologias as mais estratégicas para suas empresas e estão investindo de acordo.
+
+---
+
+### Como a ciência de dados é conduzida
+
+O processo de análise e ação sobre os dados é iterativo em vez de linear, mas é assim que o ciclo de vida da ciência de dados normalmente flui para um projeto de modelagem de dados:
+
+- **Planejamento**:  Definir um projeto e seus possíveis resultados.
+
+--
+
+- **Construção de um modelo de dados**:  Os cientistas de dados costumam usar uma variedade de bibliotecas de código aberto ou ferramentas no banco de dados para construir modelos de machine learning. Frequentemente, os usuários desejam APIs para ajudar na ingestão de dados, criação de perfil de dados e visualização ou engenharia de recursos. Eles precisarão das ferramentas certas, assim como de acesso aos dados certos e a outros recursos, como poder de computação.
+
+--
+
+- **Avaliação de um modelo**:  Os cientistas de dados devem atingir um alto percentual de precisão para seus modelos antes de se sentirem confiantes em implementá-los. A avaliação do modelo normalmente irá gerar um conjunto abrangente de métricas de avaliação e visualizações para medir o desempenho do modelo em relação aos novos dados e também classificá-los ao longo do tempo para permitir o comportamento ideal na produção. A avaliação do modelo vai além do desempenho bruto para levar em consideração o comportamento esperado da linha de base.
+
+--
+
+- **Explicação de modelos**:  Ser capaz de explicar a mecânica interna dos resultados dos modelos de machine learning em termos humanos nem sempre foi possível - mas está se tornando cada vez mais importante. Os cientistas de dados desejam explicações automatizadas do peso relativo e da importância dos fatores que geram uma previsão e detalhes explicativos específicos do modelo nas previsões do modelo.
+
+--
+
+- **Implementação de um modelo**:  Usar um modelo de machine learning treinado e colocá-lo nos sistemas certos costuma ser um processo difícil e trabalhoso. Isso pode ser facilitado operacionalizando modelos como APIs escaláveis e seguras ou usando modelos de machine learning no banco de dados.
+
+--
+
+- **Monitoramento de modelos**:  Infelizmente, implementar um modelo não é o fim disso. Os modelos devem sempre ser monitorados após a implementação para garantir que estejam funcionando corretamente. Os dados em que o modelo foi treinado podem não ser mais relevantes para previsões futuras após um período de tempo. Por exemplo, na detecção de fraudes, os criminosos estão sempre inventando novas maneiras de hackear contas.
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true,
+"output": null,
+"rticles::arxiv_article": null,
+"keep_tex": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
